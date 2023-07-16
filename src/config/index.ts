@@ -1,0 +1,10 @@
+import "dotenv/config";
+export const port = Number(process.env.PORT);
+export const DbUrl = String(process.env.DB_URL);
+export const Host = String(process.env.MAIL_HOST);
+export const Password = String(process.env.MAIL_PASSWORD);
+export const Email = String(process.env.MAIL);
+export const AccessSecret = String(process.env.ACCESS_TOKEN_SECRET);
+export const RefreshSecret = String(process.env.REFRESH_TOKEN_SECRET);
+export const AccessExpire = String(process.env.ACCESS_EXPIRE);
+export const RefreshExpire = String(process.env.REFRESH_EXPIRE);

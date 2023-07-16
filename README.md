@@ -1,3 +1,3 @@
 # Unibit
 
-#### please press npm i gor installing node dependencies
+#### please code npm i to installing node dependencies
