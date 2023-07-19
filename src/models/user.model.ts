@@ -35,34 +35,6 @@ const userSchema = new Schema<USER_TYPE, Model<USER_TYPE>>(
       type: Number,
     },
 
-    country: {
-      type: String,
-      trim: true,
-    },
-
-    profession: {
-      type: String,
-      trim: true,
-    },
-
-    expertiseInSubjects: {
-      type: [String],
-    },
-    yearOfExperience: {
-      type: String,
-    },
-
-    portfolioLink: {
-      type: String,
-    },
-    about: {
-      type: String,
-    },
-
-    designation: {
-      type: String,
-    },
-
     password: {
       type: String,
       select: false,
@@ -89,29 +61,6 @@ const userSchema = new Schema<USER_TYPE, Model<USER_TYPE>>(
 
     isVerified: {
       type: Boolean,
-    },
-
-    followers: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "User",
-      },
-    ],
-
-    following: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "User",
-      },
-    ],
-
-    socialLinks: {
-      facebook: String,
-      youtube: String,
-      instagram: String,
-      twitter: String,
-      linkedin: String,
-      github: String,
     },
   },
   {
